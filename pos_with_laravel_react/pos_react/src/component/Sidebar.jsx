@@ -5,14 +5,14 @@ const Sidebar = () => {
         <>
       <aside className="main-sidebar sidebar-dark-primary elevation-4">
       {/* Brand Logo */}
-      <a href="index3.html" className="brand-link">
+      <NavLink to ="/" className="brand-link">
         <img
           src="assets/dist/img/logopic.png"
           alt="logopic.png"
           style={{ width: 200 }}
         />
         <span className="brand-text font-weight-light" />
-      </a>
+      </NavLink>
       {/* Sidebar */}
       <div className="sidebar">
         {/* Sidebar user panel (optional) */}
@@ -57,19 +57,19 @@ const Sidebar = () => {
             {/* Add icons to the links using the .nav-icon class
          with font-awesome or any other icon font library */}
             <li className="nav-item menu-open">
-              <a href="#" className="nav-link active">
+              <NavLink  to ="/" className="nav-link active">
                 <i className="nav-icon fas fa-tachometer-alt" />
                 <p>
                   Dashboard
                   <i className="right fas fa-angle-left" />
                 </p>
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
               <a href="#" className="nav-link">
                 <i className="nav-icon fas fa-copy" />
                 <p>
-                 Holseler
+                wholesale
                   <i className="fas fa-angle-left right" />
                   <span className="badge badge-info right">6</span>
                 </p>
@@ -82,13 +82,13 @@ const Sidebar = () => {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a
-                    href="pages/layout/top-nav-sidebar.html"
+                  <NavLink
+                    to="/Manageseler"
                     className="nav-link"
                   >
                     <i className="far fa-circle nav-icon" />
                     <p>Manage seler</p>
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </li>
@@ -96,22 +96,22 @@ const Sidebar = () => {
               <a href="#" className="nav-link">
                 <i className="nav-icon fas fa-chart-pie" />
                 <p>
-                  Charts
+                Catagory
                   <i className="right fas fa-angle-left" />
                 </p>
               </a>
               <ul className="nav nav-treeview">
                 <li className="nav-item">
-                  <a href="pages/charts/chartjs.html" className="nav-link">
+                  <NavLink to ="/AddCatagory" className="nav-link">
                     <i className="far fa-circle nav-icon" />
-                    <p>ChartJS</p>
-                  </a>
+                    <p>Add Catagory</p>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a href="pages/charts/flot.html" className="nav-link">
+                  <NavLink to ="/ManageCatagory" className="nav-link">
                     <i className="far fa-circle nav-icon" />
-                    <p>Flot</p>
-                  </a>
+                    <p>Mange Catagory</p>
+                  </NavLink>
                 </li>
               </ul>
             </li>
@@ -119,22 +119,22 @@ const Sidebar = () => {
               <a href="#" className="nav-link">
                 <i className="nav-icon fas fa-edit" />
                 <p>
-                  Forms
+                Products
                   <i className="fas fa-angle-left right" />
                 </p>
               </a>
               <ul className="nav nav-treeview">
                 <li className="nav-item">
-                  <a href="pages/forms/general.html" className="nav-link">
+                  <NavLink to="/AddProducts" className="nav-link">
                     <i className="far fa-circle nav-icon" />
-                    <p>General Elements</p>
-                  </a>
+                    <p>Add products</p>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a href="pages/forms/advanced.html" className="nav-link">
+                  <NavLink to="/ManageProducts" className="nav-link">
                     <i className="far fa-circle nav-icon" />
-                    <p>Advanced Elements</p>
-                  </a>
+                    <p>Manage products</p>
+                  </NavLink>
                 </li>
               </ul>
             </li>
@@ -142,29 +142,24 @@ const Sidebar = () => {
               <a href="#" className="nav-link">
                 <i className="nav-icon fas fa-table" />
                 <p>
-                  Tables
+                  Invoice
                   <i className="fas fa-angle-left right" />
                 </p>
               </a>
               <ul className="nav nav-treeview">
                 <li className="nav-item">
-                  <a href="pages/tables/simple.html" className="nav-link">
+                  <NavLink to="/MakeInvoice" className="nav-link">
                     <i className="far fa-circle nav-icon" />
-                    <p>Simple Tables</p>
-                  </a>
+                    <p>Make Invoice</p>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a href="pages/tables/data.html" className="nav-link">
+                  <NavLink to="/ManageInvoice" className="nav-link">
                     <i className="far fa-circle nav-icon" />
-                    <p>DataTables</p>
-                  </a>
+                    <p>Manage Invoice</p>
+                  </NavLink>
                 </li>
-                <li className="nav-item">
-                  <a href="pages/tables/jsgrid.html" className="nav-link">
-                    <i className="far fa-circle nav-icon" />
-                    <p>jsGrid</p>
-                  </a>
-                </li>
+               
               </ul>
             </li>
             <li className="nav-header">EXAMPLES</li>
