@@ -3,7 +3,7 @@ import Navebar from '../../component/Navebar';
 import Sidebar from '../../component/Sidebar';
 import Footer from '../../component/Footer';
 
-const ManageInvoice = () => {
+const ManageCustomer = () => {
     return (
         <>
         <Navebar/>
@@ -14,7 +14,7 @@ const ManageInvoice = () => {
                 <div className="col-10">
                     <section className="content-header d-flex justify-content-between flex-row" >
                         <h1>
-                        Invoice  Information  |
+                        Customers  Information  |
                           <small>Preview</small>
                         </h1>
                         <ol className="breadcrumb">
@@ -30,14 +30,9 @@ const ManageInvoice = () => {
                         <thead>
                             <tr>
                             <th scope="col">#NO</th>
-                            <th scope="col">costomer Name</th>
-                            <th scope="col">Catagory</th>
-                            <th scope="col">Product Name</th>
-                            <th scope="col">Quantity</th>
-                            <th scope="col">MRP TK</th>
-                            <th scope="col">Vat</th>
-                            <th scope="col">Discount %</th>
-                            <th scope="col">Net Price</th>
+                            <th scope="col">Costomer Name</th>
+                            <th scope="col">Number</th>
+                            <th scope="col">Custom ID</th>
                             <th scope="col">Action</th>
                             </tr>
                         </thead>
@@ -46,11 +41,6 @@ const ManageInvoice = () => {
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
                             <td>@mdo</td>
                             <td>Edit / Delete</td>
                             </tr>
@@ -65,4 +55,4 @@ const ManageInvoice = () => {
     );
 };
 
-export default ManageInvoice;
+export default ManageCustomer;

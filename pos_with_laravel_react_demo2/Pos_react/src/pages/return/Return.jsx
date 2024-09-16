@@ -3,9 +3,9 @@ import Navebar from '../../component/Navebar';
 import Sidebar from '../../component/Sidebar';
 import Footer from '../../component/Footer';
 
-const MakeInvoice = () => {
+const Return = () => {
     return (
-    <div className='min-vh-100'>
+        <div className='min-vh-100'>
         <Navebar/>
         <Sidebar/>
        <div className="container min-vh-100">
@@ -14,7 +14,7 @@ const MakeInvoice = () => {
             <div className="col-10">
                 <section className="content-header d-flex justify-content-between flex-row" >
                     <h1>
-                    Invoice  Make |
+                    Make Return Product|
                       <small>Preview</small>
                     </h1>
                     <ol className="breadcrumb">
@@ -112,11 +112,17 @@ const MakeInvoice = () => {
                     </div>
                     </div>
                     <div>
-                    <hr style={{borderTop: '2px solid #ff5252'}} />
+                 
                     </div>
                 </div>
-                <input type="submit" name="submit" defaultValue="submit" className="form-control btn btn-success" />
-                {/* <button class="btn btn-success  text-right">Submit</button> */}
+                {/* <input type="submit" name="submit" defaultValue="submit" className="form-control btn btn-success" /> */}
+                  <div className="container">
+                    <div className="row">
+                        <div className="col-10"></div>
+                        <div className="col-2"> <button className="btn btn-success  text-bolder">Return product</button></div>
+                    </div>
+                  </div>
+                  <hr style={{borderTop: '2px solid #ff5252'}} />
                 {/* <button class="btn btn-danger">Cancel</button> */}
         </form>
 
@@ -130,4 +136,4 @@ const MakeInvoice = () => {
     );
 };
 
-export default MakeInvoice;
+export default Return;

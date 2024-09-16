@@ -3,7 +3,7 @@ import Navebar from '../../component/Navebar';
 import Sidebar from '../../component/Sidebar';
 import Footer from '../../component/Footer';
 
-const ManageInvoice = () => {
+const Manageseler = () => {
     return (
         <>
         <Navebar/>
@@ -14,11 +14,11 @@ const ManageInvoice = () => {
                 <div className="col-10">
                     <section className="content-header d-flex justify-content-between flex-row" >
                         <h1>
-                        Invoice  Information  |
+                        wholesale Information  |
                           <small>Preview</small>
                         </h1>
                         <ol className="breadcrumb">
-                          <li><a href="#"><i className="fa fa-dashboard" /> Home || </a></li>
+                          <li><a href="#"><i className="fa fa-dashboard" /> Home  </a></li>
                           <li><a href="#">Forms  </a></li>
                           <li className="active">General Elements</li>
                         </ol>
@@ -30,14 +30,14 @@ const ManageInvoice = () => {
                         <thead>
                             <tr>
                             <th scope="col">#NO</th>
-                            <th scope="col">costomer Name</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Email</th>
                             <th scope="col">Catagory</th>
-                            <th scope="col">Product Name</th>
                             <th scope="col">Quantity</th>
-                            <th scope="col">MRP TK</th>
-                            <th scope="col">Vat</th>
-                            <th scope="col">Discount %</th>
-                            <th scope="col">Net Price</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Total Price</th>
                             <th scope="col">Action</th>
                             </tr>
                         </thead>
@@ -65,4 +65,4 @@ const ManageInvoice = () => {
     );
 };
 
-export default ManageInvoice;
+export default Manageseler;
