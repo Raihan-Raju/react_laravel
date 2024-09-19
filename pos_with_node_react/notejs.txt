@@ -1,0 +1,6 @@
+1)npm init -y
+2)index.js make
+3)npm i express cors mongodb
+4)add this line into package.jso scripts section     "start":"node index.js"
+4)then go to this link https://expressjs.com/en/starter/hello-world.html
+and then copy paste
